@@ -1,14 +1,14 @@
 package lab4_isaacdiazdavidzavala;
 
 public class DGrave extends Delito{
-    private int puntuacion;     // *esta lleva validacion en el set()
+    private int puntuacion;     // *esta lleva validacion en el set() porque va de 1 a 5
 
     public DGrave() {
     }
 
     public DGrave(int puntuacion, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
         super(desc, nVictima, culpable, fecha, pais, numDelito);
-        this.puntuacion = puntuacion;
+        setPuntuacion(puntuacion);
     }
     
     public int getPuntuacion() {
@@ -16,7 +16,9 @@ public class DGrave extends Delito{
     }
 
     public void setPuntuacion(int puntuacion) {
-        this.puntuacion = puntuacion;
+        if(puntuacion>=1 && puntuacion<=5){
+            this.puntuacion = puntuacion;
+        }
     }
 
     @Override
