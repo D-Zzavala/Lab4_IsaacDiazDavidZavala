@@ -7,11 +7,11 @@ public class Prostitucion extends DMenor{
         super();
     }
 
-    public Prostitucion(String nSolicitante, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, String nPolicia, int id, int numCelda) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, nPolicia, id, numCelda);
+    public Prostitucion(String nSolicitante, String nPolicia, int id, int numCelda, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(nPolicia, id, numCelda, desc, nVictima, culpable, fecha, pais, numDelito);
         this.nSolicitante = nSolicitante;
     }
-
+    
     public String getnSolicitante() {
         return nSolicitante;
     }

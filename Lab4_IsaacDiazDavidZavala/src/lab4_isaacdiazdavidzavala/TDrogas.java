@@ -8,12 +8,12 @@ public class TDrogas extends DGrave{
         super();
     }
 
-    public TDrogas(String nDroga, int cantidad, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, int puntuacion) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, puntuacion);
+    public TDrogas(String nDroga, int cantidad, int puntuacion, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(puntuacion, desc, nVictima, culpable, fecha, pais, numDelito);
         this.nDroga = nDroga;
         this.cantidad = cantidad;
     }
-
+    
     public String getnDroga() {
         return nDroga;
     }

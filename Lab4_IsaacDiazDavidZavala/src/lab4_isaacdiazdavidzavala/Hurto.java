@@ -8,12 +8,12 @@ public class Hurto extends DMenor{
         super();
     }
 
-    public Hurto(String objHurtado, int valor, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, String nPolicia, int id, int numCelda) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, nPolicia, id, numCelda);
+    public Hurto(String objHurtado, int valor, String nPolicia, int id, int numCelda, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(nPolicia, id, numCelda, desc, nVictima, culpable, fecha, pais, numDelito);
         this.objHurtado = objHurtado;
         this.valor = valor;
     }
-
+    
     public String getObjHurtado() {
         return objHurtado;
     }

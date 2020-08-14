@@ -6,12 +6,12 @@ public class Violacion extends DGrave{
     public Violacion() {
         super();
     }
-    
-    public Violacion(int edadVic, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, int puntuacion) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, puntuacion);
+
+    public Violacion(int edadVic, int puntuacion, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(puntuacion, desc, nVictima, culpable, fecha, pais, numDelito);
         this.edadVic = edadVic;
     }
-
+    
     public int getEdadVic() {
         return edadVic;
     }

@@ -9,13 +9,13 @@ public class Vandalismo extends DMenor{
         super();
     }
 
-    public Vandalismo(String edificacion, int pisos, String nDueño, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, String nPolicia, int id, int numCelda) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, nPolicia, id, numCelda);
+    public Vandalismo(String edificacion, int pisos, String nDueño, String nPolicia, int id, int numCelda, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(nPolicia, id, numCelda, desc, nVictima, culpable, fecha, pais, numDelito);
         this.edificacion = edificacion;
         this.pisos = pisos;
         this.nDueño = nDueño;
     }
-
+    
     public String getEdificacion() {
         return edificacion;
     }

@@ -7,9 +7,9 @@ public class Terrorismo extends DGrave{
     public Terrorismo() {
         super();
     }
-
-    public Terrorismo(String nArtefacto, int numVictimas, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, int puntuacion) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, puntuacion);
+    
+    public Terrorismo(String nArtefacto, int numVictimas, int puntuacion, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(puntuacion, desc, nVictima, culpable, fecha, pais, numDelito);
         this.nArtefacto = nArtefacto;
         this.numVictimas = numVictimas;
     }

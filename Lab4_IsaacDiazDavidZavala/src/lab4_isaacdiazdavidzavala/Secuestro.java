@@ -8,12 +8,12 @@ public class Secuestro extends DGrave{
         super();
     }
 
-    public Secuestro(int tiempoRete, String estado, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, int puntuacion) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, puntuacion);
+    public Secuestro(int tiempoRete, String estado, int puntuacion, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(puntuacion, desc, nVictima, culpable, fecha, pais, numDelito);
         this.tiempoRete = tiempoRete;
         this.estado = estado;
     }
-
+    
     public int getTiempoRete() {
         return tiempoRete;
     }

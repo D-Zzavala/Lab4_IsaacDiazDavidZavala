@@ -8,12 +8,12 @@ public class Asesinato extends DGrave{
         super();
     }
 
-    public Asesinato(String nArma, int numCuerpos, String desc, String nVictima, boolean culpable, String sentencia, String fecha, String pais, int numDelito, int puntuacion) {
-        super(desc, nVictima, culpable, sentencia, fecha, pais, numDelito, puntuacion);
+    public Asesinato(String nArma, int numCuerpos, int puntuacion, String desc, String nVictima, boolean culpable, String fecha, String pais, int numDelito) {
+        super(puntuacion, desc, nVictima, culpable, fecha, pais, numDelito);
         this.nArma = nArma;
         this.numCuerpos = numCuerpos;
     }
-
+    
     public String getnArma() {
         return nArma;
     }
