@@ -5,10 +5,8 @@
  */
 package lab4_isaacdiazdavidzavala;
 
-/**
- *
- * @author 50431
- */
+ 
+
 public class Zavala {
     
 }
