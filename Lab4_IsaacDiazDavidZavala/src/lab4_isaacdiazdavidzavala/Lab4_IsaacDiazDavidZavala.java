@@ -86,15 +86,75 @@ public class Lab4_IsaacDiazDavidZavala {
                     while (sw == false) {
                         switch (opp) {
                             case 1: {
-                                //add Delito
+                                //mod Delito
                                 break;
                             }
                             case 2: {
-                                //add Criminal
+                                //mod Criminal
+                                
+                                String nombre;
+                                int edad;
+                                String genero;             //solo puede ser 1. Masculino o 2.Femenino
+                                String pais;
+                                boolean encarcelado;       //0: no está encarcelado    1: está topadito
+                                String desc;
+
+                                System.out.print("Posición del criminal en la lista: ");
+                                int pos = read.nextInt();
+                                System.out.println("¿Qué querés modificar?");
+                                System.out.print("1. Nombre   2. Edad   3. Género 4. País   5. Encarcelado   6. Descripción");
+                                int o = read.nextInt();
+                                while ((o >= 1) == false && (o <= 6) == false) {
+                                    o = read.nextInt();
+                                }
+                                if (o == 1) {
+                                    System.out.print("Ingrese nombre del criminal: ");
+                                    nombre = read.next();
+                                    ACriminal.get(pos).setNombre(nombre);
+                                } else if (o == 2) {
+                                    System.out.print("Edad: ");
+                                    edad = read.nextInt();
+                                    ACriminal.get(pos).setEdad(edad);
+                                } else if (o == 3) {
+                                    System.out.print("Género:    1. Hombre  2. Mujer");
+                                    int oop = read.nextInt();
+                                    while (oop != 1 || oop != 2) {
+                                        oop = read.nextInt();
+                                    }
+                                    if (oop == 1) {
+                                        genero = "Hombre";
+                                    } else {
+                                        genero = "Mujer";
+                                    }
+                                    ACriminal.get(pos).setGenero(genero);
+                                } else if (o == 4) {
+                                    System.out.print("País: ");
+                                    pais = read.next();
+                                    ACriminal.get(pos).setPais(pais);
+                                } else if (o == 5) {
+                                    System.out.println("¿Está encarcelado?:    0. No  1. Sí");
+                                    int oop = read.nextInt();
+                                    while (oop != 0 || oop != 1) {
+                                        oop = read.nextInt();
+                                    }
+                                    if (oop == 0) {
+                                        encarcelado = false;
+                                    } else {
+                                        encarcelado = true;
+                                    }
+                                    ACriminal.get(pos).setEncarcelado(encarcelado);
+                                } else if(o==6){
+                                    System.out.print("Descripción del criminal (una oración): ");
+                                    desc = read.nextLine();
+                                    desc = read.nextLine();
+                                    ACriminal.get(pos).setDesc(desc);
+                                    
+                                }
+                                
                                 break;
                             }
                             case 3: {
-                                //add Agente
+                                //mod Agente
                                 break;
                             }
                             case 0: {
